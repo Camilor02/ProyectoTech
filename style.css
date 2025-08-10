@@ -1,7 +1,94 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f9c846;
   padding: 20px;
   text-align: center;
 }
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.bg-light {
+    opacity: 1;
+    background-color: #fff9d0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.info{
+    background-color: #fdf6e3;
+  padding: 40px 20px;
+}
+
+.container {
+  /*background: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231') center/cover no-repeat;*/
+  color: black;
+  /*padding: 20px 20px;*/
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: #ffd900;
+  color: #000; /* Cambia a negro al pasar el mouse */
+}
+
+.navbar-brand {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.btn-dato {
+  background-color: #f9c846;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-dato:hover {
+  background-color: #ffd900;
+  transform: scale(1.05);
+}
+

@@ -4,11 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ransición Energética Justa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenido al Proyecto de Energía Renovable</h1>
-    <p>Explora cómo la energía solar puede transformar el mundo.</p>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Transición Energética</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Energía Solar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-light text-center py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold">¡El futuro es solar! ☀️</h2>
+            <p class="lead">Descubre cómo la energía solar transforma el mundo.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="info">
+        <h3>¿Qué es la energía solar?</h3>
+        <p>La energía solar es una fuente renovable que aprovecha la radiación del sol para generar electricidad o calor. Es limpia, inagotable y una de las claves para combatir el cambio climático.</p>
+        </section>
+
+    <section class="ventajas">
+      <h3>Ventajas de la energía solar</h3>
+      <ul>
+        <li>Es renovable e inagotable</li>
+        <li>Reduce la huella de carbono</li>
+        <li>Disminuye costos a largo plazo</li>
+        <li>Fácil instalación en hogares</li>
+      </ul>
+    </section>
+
+        <section class="curiosidad">
+        <h3>Dato curioso 🌞</h3>
+        <button class="btn-dato" onclick="mostrarDato()">Ver dato</button>
+        <p id="dato"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Juan Camilo - Proyecto Bootcamp</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 
 </body>
