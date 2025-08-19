@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transición Energética Justa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transición Energética Justa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Transición Energética</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#index">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="energiasolar.html">Energía Solar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Transición Energética</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="energiasolar.html">Energía Solar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section class="bg-light text-center py-5">
-        <div class="container">
-            <h2 class="display-5 fw-bold">¡El futuro es solar! ☀️</h2>
-            <p class="lead">Descubre cómo la energía solar transforma el mundo.</p>
-        </div>
+  <!-- HERO -->
+  <section id="inicio" class="bg-light text-center py-5">
+    <div class="container">
+      <h2 class="display-5 fw-bold">¡El futuro es solar! ☀️</h2>
+      <p class="lead">Descubre cómo la energía solar transforma el mundo.</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- INFO -->
+    <section class="info">
+      <h3>¿Qué es la energía solar?</h3>
+      <p>La energía solar es una fuente renovable que aprovecha la radiación del sol para generar electricidad o calor. Es limpia, inagotable y una de las claves para combatir el cambio climático.</p>
     </section>
 
-    <main>
-        <section class="info">
-        <h3>¿Qué es la energía solar?</h3>
-        <p>La energía solar es una fuente renovable que aprovecha la radiación del sol para generar electricidad o calor. Es limpia, inagotable y una de las claves para combatir el cambio climático.</p>
-        </section>
-
+    <!-- VENTAJAS -->
     <section class="ventajas">
       <h3>Ventajas de la energía solar</h3>
       <ul>
@@ -47,96 +51,114 @@
       </ul>
     </section>
 
-        <section class="curiosidad">
-        <h3>Dato curioso 🌞</h3>
-        <button class="btn-dato" onclick="mostrarDato()">Ver dato</button>
-        <p id="dato"></p>
-        </section>
+    <!-- DATO CURIOSO -->
+    <section class="curiosidad">
+      <h3>Dato curioso 🌞</h3>
+      <button class="btn-dato" onclick="mostrarDato()">Ver dato</button>
+      <p id="dato"></p>
+    </section>
 
-        <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-12">
-                <div class="wrapper">
-                    <div class="row no-gutters">
-                        <div class="col-md-7 d-flex align-items-stretch">
-                            <div class="contact-wrap w-100 p-md-5 p-4">
-                                <h3 class="mb-4">Get in touch</h3>
-                                <div id="form-message-warning" class="mb-4"></div> 
-                                <div id="form-message-success" class="mb-4">Your message was sent, thank you!</div>
-                                <form method="POST" id="contactForm" name="contactForm" novalidate="novalidate">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6"> 
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="submit" value="Send Message" class="btn btn-primary">
-                                                <div class="submitting"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-5 d-flex align-items-stretch">
-                            <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
-                                <h3 class="mb-4 mt-md-4">Contact us</h3>
-                        <div class="dbox w-100 d-flex align-items-start">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-map-marker"></span>
-                            </div>
-                            <div class="text pl-3">
-                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-                          </div>
-                      </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-phone"></span>
-                            </div>
-                            <div class="text pl-3">
-                            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-                          </div>
-                      </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-paper-plane"></span>
-                            </div>
-                            <div class="text pl-3">
-                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-                          </div>
-                      </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="fa fa-globe"></span>
-                            </div>
-                            <div class="text pl-3">
-                            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                          </div>
-                      </div>
-    </main>
+    <!-- HUELLAS DE CARBONO -->
+    <section class="carbono-section">
+      <div class="carbono-card">
+        <h3>🌍 Calcula tu Huella de Carbono</h3>
+        <p>Completa los datos y descubre tu impacto en el planeta.</p>
+        
+        <form id="carbonoForm">
+          <div class="form-group">
+            <label>Kilómetros en auto por semana:</label>
+            <input type="number" id="auto" required>
+          </div>
 
-    <footer>
-        <p>© 2025 Juan Camilo - Proyecto Bootcamp</p>
-    </footer>
+          <div class="form-group">
+            <label>Consumo mensual de electricidad (kWh):</label>
+            <input type="number" id="luz" required>
+          </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+          <div class="form-group">
+            <label>Consumo de carne (kg/semana):</label>
+            <input type="number" id="carne" required>
+          </div>
 
+          <button type="submit" class="btn-calc">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultado-box"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="row justify-content-center">
+      <div class="col-lg-10 col-md-12">
+        <div class="wrapper">
+          <div class="row no-gutters">
+            <div class="col-md-7 d-flex align-items-stretch">
+              <div class="contact-wrap w-100 p-md-5 p-4">
+                <h3 class="mb-4">Get in touch</h3>
+                <form method="POST" id="contactForm" name="contactForm" novalidate="novalidate">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" cols="30" rows="7" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-stretch">
+              <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                <h3 class="mb-4 mt-md-4">Contacto</h3>
+                <p><span>Direccion:</span> Medellin, Colombia</p>
+                <p><span>Telefono:</span> 3115858549</p>
+                <p><span>Correo:</span> kamisfx@gmailcom</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Juan Camilo - Proyecto Bootcamp</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    // Script Huella de Carbono
+    document.getElementById("carbonoForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      let auto = parseFloat(document.getElementById("auto").value) || 0;
+      let luz = parseFloat(document.getElementById("luz").value) || 0;
+      let carne = parseFloat(document.getElementById("carne").value) || 0;
+      let emisiones = (auto * 0.21) + (luz * 0.5) + (carne * 27);
+      let resultado = document.getElementById("resultado");
+      resultado.style.display = "block";
+      resultado.innerHTML = `Tu huella estimada es de <strong>${emisiones.toFixed(2)} kg CO₂</strong> al mes 🌱`;
+    });
+  </script>
 </body>
 </html>

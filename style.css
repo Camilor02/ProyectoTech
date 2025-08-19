@@ -211,3 +211,317 @@ footer {
 .fa-map-marker:before {
   content: "\f041";
 }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-light {
+  background-color: #fff9d0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: #ffd900;
+  color: #000;
+}
+
+.navbar-brand {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* BOTONES */
+.btn-dato,
+.btn-calcular {
+  background-color: #f9c846;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-dato:hover,
+.btn-calcular:hover {
+  background-color: #ffd900;
+  transform: scale(1.05);
+}
+
+/* SECCIONES */
+.info, .ventajas, .curiosidad, .huella {
+  background-color: #fdf6e3;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.ventajas ul {
+  list-style-type: "☀️ ";
+  padding-left: 20px;
+}
+
+.resultado {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- NAVBAR ---------- */
+.nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+}
+.nav-link:hover {
+  background-color: #ffd900;
+  color: #000;
+}
+.navbar-brand {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* ---------- HERO INICIO ---------- */
+.bg-light {
+  opacity: 1;
+  background-color: #fff9d0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ---------- SECCIONES INDEX ---------- */
+.info {
+  background-color: #fdf6e3;
+  padding: 40px 20px;
+  border-radius: 45px;
+}
+.ventajas {
+  background-color: #fef3c7;
+  padding: 40px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.curiosidad {
+  background-color: #fff7d6;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* ---------- BOTONES ---------- */
+.btn-dato {
+  background-color: #f9c846;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-dato:hover {
+  background-color: #ffd900;
+  transform: scale(1.05);
+}
+
+/* ---------- CONTACTO ---------- */
+.justify-content-center {
+  justify-content: center !important;
+  background-color: #fff9d0;
+  border-radius: 30px;
+}
+.contact-wrap {
+  background: #fff;
+  border-radius: 30px;
+}
+.wrapper {
+  width: 100%;
+  box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+  border-radius: 30px;
+}
+.info-wrap {
+  background: #f9c846 !important;
+  color: #fff;
+  border-radius: 30px;
+}
+.info-wrap h3 {
+  color: #fff;
+}
+.info-wrap .dbox {
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.info-wrap .dbox .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+.info-wrap .dbox .icon span {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ---------- ENERGÍA SOLAR PAGE ---------- */
+.solar-hero {
+
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solar-hero h1, 
+.solar-hero p {
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.solar-card {
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff9d0;
+}
+.solar-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.solar-curiosity {
+  background-color: #fdf6e3;
+  border-radius: 20px;
+}
+.solar-curiosity h2 {
+  color: #f59e0b;
+}
+
+/* ---------------- HUELLAS DE CARBONO ---------------- */
+.carbono-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #fff9d0;
+}
+
+.carbono-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.carbono-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.carbono-card p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #f9c846;
+  box-shadow: 0 0 5px rgba(249, 200, 70, 0.6);
+}
+
+.btn-calc {
+  background-color: #f9c846;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-calc:hover {
+  background-color: #ffd900;
+  transform: scale(1.05);
+}
+
+.resultado-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fdf6e3;
+  font-weight: bold;
+  color: #222;
+  display: none;
+}
